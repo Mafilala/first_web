@@ -1,0 +1,64 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+}
+#logo {
+  width: 100vw;
+  grid-column: 1 / -1;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  background-color: #c5cbd3;
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-duration: 600ms;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+  margin: 0 1rem;
+}
+a:hover {
+  background-color: white;
+}
+header {
+  width: 80%;
+  border-bottom: 1.5rem;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 1.5rem;
+  align-items: center;
+  border-radius: 4rem;
+  background-color: #bdd4e7;
+}
+input,
+textarea {
+  width: 100%;
+}
+.lab_inp_pair {
+  width: 60%;
+}
+input[type="checkbox"] {
+  width: unset;
+}
+button {
+  float: right;
+  border-radius: 10px;
+}
